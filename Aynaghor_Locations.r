@@ -19,14 +19,13 @@ m <- leaflet(data) %>%
   addCircleMarkers(
     lng = ~Longitude,
     lat = ~Latitude,
-    radius = 5,
+    radius = 10,
     color = "red",
     stroke = FALSE,
     fillOpacity = 0.8,
     popup = ~paste(
       "<b>Location:</b>", Location, "<br>",
-      "<b>Latitude:</b>", Latitude, "<br>",
-      "<b>Longitude:</b>", Longitude
+      "<b>Note:</b>", Note
     ),
     label = ~Location
   )
@@ -35,4 +34,4 @@ m <- leaflet(data) %>%
 m
 
 # Save the map as an HTML file
-saveWidget(m, file = "interactive_map.html")
+saveWidget(m, file = "index.html")

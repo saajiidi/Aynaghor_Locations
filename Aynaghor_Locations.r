@@ -1,6 +1,4 @@
 
-install.packages("leaflet")
-install.packages("htmlwidgets")
 # Load required libraries
 library(leaflet)
 library(htmlwidgets)
